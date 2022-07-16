@@ -108,7 +108,6 @@ navbar style
 .container {
     width: 95%;
     margin: 0 auto;
-    padding: 0 3.2rem;
 }
 nav {
     display: flex;
@@ -126,11 +125,11 @@ nav {
     text-decoration: none;
     color: #333;
     font-size: 1.8rem;
+    transition: .3s;
     font-weight: 600;
 }
 .header__navbar a:hover{
     color: var(--orangeshade);
-    transition: .4s;
 }
 .header__navbar ul {
     list-style: none;
@@ -142,6 +141,7 @@ nav {
     background-color: var(--orange);
     border-radius: 9px;
     padding: 1.2rem 2.4rem;
+    transition: all .3s;
 }
 .bg a {
     color: #fff;
@@ -151,7 +151,6 @@ nav {
 }
 .bg:hover, .bg:active {
     background-color: var(--orangeshade);
-    transition: all .3s;
     cursor: pointer;
 }
 
@@ -217,20 +216,20 @@ nav {
 .button__gray {
     background-color: var(--orange);
     color: #fff;
+    transition: all .3s;
 }
 .button__gray:hover {
     background-color: var(--orangeshade);
-    transition: all .3s;
 }
 .button__light {
     background-color: #fff;
     color: #333;
     border: 3px solid #fff;
-}
+    transition: all .3s;
+}   
 .button__light:hover {
     background-color: var(--bg);
     box-shadow: inset 0 0 0 3px #fff;
-    transition: all .3s;
 }
 .header__main--member {
     display: flex;
@@ -393,6 +392,7 @@ main {
 
 .meals {
     margin-top: 12rem;
+    margin-bottom: 2rem;
 }
 .meals__title {
     max-width: 118rem;
@@ -534,12 +534,88 @@ a.recipes__link ,a.recipes__link:visited{
 a.recipes__link:hover {
     color: var(--orangeshade);
     border-bottom: 1px solid #fff;
-    transition: all .4s;
 }
 
 /* ***************** */
 /* meals */
 /* ***************** */
 
+
+/* ***************** */
+/* testimonial */
+/* ***************** */
+
+.testimonial {
+    padding: 2rem 0;
+    background-color: var(--bg);
+    margin-top: 6rem;
+}
+.testimonial__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    margin: 8rem auto;
+    max-width: 118rem;
+}
+.testimonial__topic {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+.testimonial__coments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 7rem;
+    row-gap: 7rem;
+}
+.testimonial__coments img {
+    width: 6.4rem;
+    border-radius: 50%;
+}
+.testimonial__topic--title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--orange);
+}
+.testimonial__topic--text {
+    font-size: 4.2rem;
+    color: #333;
+}
+.testimonial__coments--box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.testimonial__coment > blockquote {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.testimonial__coment--name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+.testimonial__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.6rem;
+    padding: 1.4rem;
+}
+.testimonial__gallery--image {
+    overflow: hidden;
+}
+.testimonial__gallery--image img {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+.testimonial__gallery--image img:hover {
+    transform: scale(1.1);
+}
+
+/* ***************** */
+/* testimonial */
+/* ***************** */
 
 /* main style */
