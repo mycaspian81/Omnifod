@@ -173,9 +173,6 @@ nav {
 .header__main--text {
     grid-row: 1 / 5;
 }
-.button {
-    
-}
 .header__main--member {
     grid-row: 5 / 7;
 }
