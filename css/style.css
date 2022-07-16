@@ -268,7 +268,7 @@ nav {
 main {
     padding: 5rem 0;
 }
-.logos {
+.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,7 +276,7 @@ main {
     max-width: 120rem;
     margin: 0 auto;
 }
-.logos > p {
+.logo > p {
     font-size: 1.4rem;
     letter-spacing: .15rem;
     font-weight: 500;
