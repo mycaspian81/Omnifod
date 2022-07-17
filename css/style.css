@@ -703,9 +703,6 @@ a.recipes__link:hover {
     font-size: 1.6rem;
     color: #6f6f6f;
 }
-.list {
-
-}
 .list__item {
     font-size: 2rem;
     display: flex;
@@ -786,5 +783,111 @@ li {
 /* ***************** */
 /* pricing */
 /* ***************** */
+
+
+
+
+/* ***************** */
+/* sign up */
+/* ***************** */
+
+.sign-up {
+    padding: 15rem 5rem;
+    color: #45260a;
+}
+.sign {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    background-color: #e67e22;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+.sign__title {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sign__title h2 {
+    font-size: 4.4rem;
+    letter-spacing: .01rem;
+}
+.sign__title p {
+    font-size: 1.8rem;
+}
+.sign__inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+    justify-self: end;
+}
+.sign__image {
+    overflow: hidden;
+}
+.sign__image img {
+    width: 100%;
+    height: 100%;
+}
+input {
+    border: none;
+    outline: none;
+    background-color: var(--bg);
+    padding: 1.2rem;
+    border-radius: 9px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'rubik';
+    color: #868686;
+    transition: all .3s;
+}
+select {
+    border: none;
+    outline: none;
+    background-color: var(--bg);
+    padding: 1.2rem;
+    border-radius: 9px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: 'rubik';
+    color: var(--darkshade);
+}
+label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.item__button button {
+    width: 100%;
+    min-height: 50%;
+    padding: 1.3rem;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: var(--darkshade);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all .3s;
+}
+.item__button button:hover {
+    color: #333;
+    background-color: var(--bg);
+}
+input:focus {
+    box-shadow: 0 0 0 0.8rem rgb(253 242 233 / 50%);
+}
+.item__button {
+align-self: flex-end;
+}
+
+/* ***************** */
+/* sign up */
+/* ***************** */
+
+
 
 /* main style */
