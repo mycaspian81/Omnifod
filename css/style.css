@@ -153,6 +153,15 @@ nav {
     background-color: var(--orangeshade);
     cursor: pointer;
 }
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--orangeshade);
+}
+.title {
+    font-size: 4.2rem;
+    color: #333;
+}
 
 /* ********************* */
 /* navbar style */
@@ -306,7 +315,7 @@ main {
 .app__title {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 8rem 0;
 }
 .app__title > p {
@@ -559,6 +568,11 @@ a.recipes__link:hover {
     flex-direction: column;
     gap: 10rem;
 }
+.testimonial__topic--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .testimonial__coments {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -570,13 +584,9 @@ a.recipes__link:hover {
     width: 6.4rem;
     border-radius: 50%;
 }
-.testimonial__topic--title {
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: var(--orange);
-}
 .testimonial__topic--text {
     font-size: 4.2rem;
+    line-height: 1.2;
     color: #333;
 }
 .testimonial__coments--box {
@@ -613,6 +623,168 @@ a.recipes__link:hover {
 
 /* ***************** */
 /* testimonial */
+/* ***************** */
+
+
+
+
+
+/* ***************** */
+/* pricing */
+/* ***************** */
+
+.price {
+    padding: 9.6rem 6.2rem 0 6.2rem;
+}
+.starter {
+    justify-self: end;
+}
+.complete {
+    background-color: var(--bg);
+    position: relative;
+}
+.complete::after {
+    content: "BEST VALUE";
+    background-color: #ffd43b;
+    padding: .8rem 8rem;
+    position: absolute;
+    top: 6%;
+    right: -20%;
+    transform: rotate(45deg);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.price__title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.price__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 9.6rem ;
+    margin-bottom: 5rem;
+    gap: 6rem;
+}
+.price__container--box {
+    width: 85%;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    border: 2px solid var(--bg);
+    padding: 4.6rem 2.5rem;
+    overflow: hidden;
+}
+.box__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+.box__title--subtitle {
+    color: var(--orangeshade);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box__title--price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+}
+.box__title--price span {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: -2%;
+}
+.box__title--content {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+.list {
+
+}
+.list__item {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+.list__itme strong {
+    font-weight: 500;
+}
+.list__item ion-icon {
+    font-size: 2.8rem;
+    color: var(--orange);
+}
+li {
+    list-style: none;
+
+}
+.box__btn {
+    padding: 1.6rem 3.2rem;
+    background-color: var(--orange);
+    border-radius: 9px;
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all .3s;
+    font-family: inherit;
+    cursor: pointer;
+}
+.box__btn a {
+    text-decoration: none;
+    color: #fff;
+}
+.box__btn:hover {
+    background-color: var(--orangeshade);
+}
+.price__features {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    align-items: center;
+}
+.price__features p {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+.price__feature--boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+}
+.feature__box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.feature__box--icon ion-icon {
+    font-size: 3.6rem;
+    color: var(--orange);
+    background-color: var(--bg);
+    border-radius: 50%;
+    padding: 1.4rem;
+}
+.feature__box--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.feature--subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+}
+.feature--text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/* ***************** */
+/* pricing */
 /* ***************** */
 
 /* main style */
