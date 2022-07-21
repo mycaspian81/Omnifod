@@ -1,0 +1,13 @@
+@media (min-width: 1350px) {
+    html {
+        font-size: 14rem;
+    }
+    body {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1350px) {}
+@media (max-width: 1200px) {}
+@media (max-width: 1024px) {}
+@media (max-width: 860px) {}
