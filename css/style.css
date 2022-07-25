@@ -375,6 +375,7 @@ main {
 .appimage {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .app__container--content1 {
     grid-column: 1 / 2;
@@ -399,6 +400,30 @@ main {
 .app__container--image3 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+.appimage::before {
+    content: "";
+    width: 40%;
+    padding-bottom: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--graybg);
+    z-index: -1;
+    border-radius: 50%;
+}
+.appimage::after {
+    content: "";
+    width: 60%;
+    padding-bottom: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg);
+    z-index: -2;
+    border-radius: 50%;
 }
 
 /* ***************** */
