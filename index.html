@@ -10,6 +10,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon-apple-touch.png" />
+    <link rel="manifast" href="manifast.webmanifast" />
 
 <!-- link css file -->
 <link rel="stylesheet" href="css/style.css">
@@ -23,17 +27,17 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="navbar">
             <div class="header__logo">
                 <img src="img/omnifood-logo.png" alt="omnifood-logo">
             </div>
             <div class="header__navbar">
                 <ul>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Meals</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li class="bg"><a href="#">Try for free</a></li>
+                    <li><a class="main__nav" href="#works">How it works</a></li>
+                    <li><a class="main__nav" href="#meals">Meals</a></li>
+                    <li><a class="main__nav" href="#testimonial">Testimonials</a></li>
+                    <li><a class="main__nav" href="#pricing">Pricing</a></li>
+                    <li class="bg"><a class="main__nav" href="#signup">Try for free</a></li>
                 </ul>
                 <button class="menu-open">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -51,8 +55,8 @@
                 <p>
                     smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
                 <div class="button">
-                    <button class="button__gray">Start eating well</button>
-                    <button class="button__light">Learn more &DownArrow;</button>
+                    <button class="button__gray"><a href="#signup">Start eating well</a></button>
+                    <button class="button__light"><a href="#works">Learn more &DownArrow;</a></button>
                 </div>
                 <div class="member__image">
                     <div class="customer__imgs">
@@ -69,7 +73,11 @@
                 </div>
             </div>
             <div class="header__main--photos">
-                <img src="img/hero.png" alt="hero-photo">
+                    <picture>
+                        <source srcset="img/hero.webp" type="image/webp">
+                        <source srcset="img/hero.png" type="image/png">
+                        <img src="img/hero.webp" alt="hero-photo">
+                    </picture>
             </div>
         </section>
     </header>
@@ -90,7 +98,7 @@
         </section>
         <section class="app">
                 <div class="container">
-                    <div class="app__title">
+                    <div class="app__title" id="works">
                         <p class="subtitle">how it works</p>
                         <h2 class="title">Your daily dose of health in 3 simple steps</h2>
                     </div>
@@ -134,7 +142,7 @@
                     </div>
                 </div>
         </section>
-        <section class="meals">
+        <section class="meals" id="meals">
                 <div class="container">
                     <div class="meals__title">
                         <p class="meals__title--dis subtitle">MEALS</p>
@@ -241,7 +249,7 @@
                     </div>
                 </div>
         </section>
-        <section class="testimonial">
+        <section class="testimonial" id="testimonial">
             <div class="container">
                 <div class="testimonial__content">
                     <div class="testimonial__topic">
@@ -333,7 +341,7 @@
             </div>
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <div class="price">
                     <div class="price__title">
@@ -447,7 +455,7 @@
         <section class="sign-up">
             <div class="container">
                 <div class="sign">
-                    <div class="sign__title">
+                    <div class="sign__title" id="signup">
                         <h2>Get your first meal for free!</h2>
                         <p>Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
                         <div class="sign__inputs">

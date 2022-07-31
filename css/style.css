@@ -81,6 +81,9 @@ html {
     /* 10px / 16px = 0.625 = 62.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 body {
     font-family: 'Rubik', sans-serif;
@@ -176,6 +179,19 @@ nav {
     font-size: 4.2rem;
     color: #333;
 }
+.sticky .navbar {
+    position: fixed;
+    height: 6.5rem;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: hsla(27, 83%, 95%, 0.95);
+    z-index: 999;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.055);
+}
+.sticky .header__main {
+    margin-top: 6.4rem;
+}
 
 /* ********************* */
 /* navbar style */
@@ -225,6 +241,11 @@ nav {
     margin-top: 2rem;
     display: flex;
     gap: 2rem;
+}
+.button a {
+    text-decoration: none;
+    color: inherit;
+
 }
 .button__gray {
     background-color: var(--orange);
