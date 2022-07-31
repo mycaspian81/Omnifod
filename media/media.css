@@ -61,6 +61,11 @@
     .header__main--photos img {
         width: 65%;
     }
+    .hero-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .header__navbar ul {
         position: absolute;
         left: 0;
@@ -198,6 +203,11 @@
     }
     .header__main--photos img {
         width: 65%;
+    }
+    .hero-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .header {
         position: relative;
@@ -413,7 +423,11 @@
     .header__main--photos {
         grid-row: 1 / 2;
         display: flex;
+    }
+    .hero-photo {
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
     .header__main--photos img {
         width: 65%;
